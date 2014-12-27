@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Basic example - Sonatra Footable Responsive</title>
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../bower_components/footable/css/footable.core.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="table-responsive">
+    <table class="table" id="table-id">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Table heading 1</th>
+            <th>Table heading 2</th>
+            <th>Table heading 3</th>
+            <th>Table heading 4</th>
+            <th>Table heading 5</th>
+            <th>Table heading 6</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/footable/js/footable.js"></script>
+<script src="../js/footable-responsive.js"></script>
+<script>
+    $( '#table-id' ).footable({responsive: {enabled: true}});
+</script>
+</body>
+</html>
