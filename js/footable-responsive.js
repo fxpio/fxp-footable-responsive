@@ -12,7 +12,7 @@
 /*global document*/
 /*global CustomEvent*/
 /*global Footable*/
-/*global AutoHide*/
+/*global FootableResponsive*/
 
 /**
  * @name Event
@@ -23,7 +23,7 @@
  * @param {jQuery} $
  * @param {window} w
  *
- * @typedef {AutoHide} AutoHide
+ * @typedef {FootableResponsive} FootableResponsive
  */
 (function ($, w) {
     'use strict';
@@ -136,24 +136,24 @@
      * @type {object}
      */
     var defaults = {
-        autoHide: {
+        responsive: {
             enabled: true,
             minWidth: 90
         }
     };
 
-    // FOOTABLE AUTO HIDE COLUMN CLASS DEFINITION
-    // ==========================================
+    // FOOTABLE RESPONSIVE CLASS DEFINITION
+    // ====================================
 
     /**
      * @constructor
      *
-     * @this AutoHide
+     * @this FootableResponsive
      */
-    function AutoHide() {
-        this.name = "Sonatra Footable Auto Hide";
+    function FootableResponsive() {
+        this.name = "Sonatra Footable Responsive";
         this.init = function (ft) {
-            if (!ft.options.autoHide.enabled) {
+            if (!ft.options.responsive.enabled) {
                 return;
             }
 
@@ -161,17 +161,17 @@
                 $responsive = $table.parent('.table-responsive');
 
             if (1 === $responsive.size()) {
-                $table.on('footable_initialized.autohide', onInitializedTable);
-                $table.on('footable_resizing.autohide', onResizingTable);
-                $table.on('footable_resized.autohide', onResizedTable);
+                $table.on('footable_initialized.responsive', onInitializedTable);
+                $table.on('footable_resizing.responsive', onResizingTable);
+                $table.on('footable_resized.responsive', onResizedTable);
             }
         };
     }
 
 
-    // FOOTABLE AUTO HIDE COLUMN PLUGIN DEFINITION
-    // ===========================================
+    // FOOTABLE RESPONSIVE PLUGIN DEFINITION
+    // =====================================
 
-    w.footable.plugins.register(AutoHide, defaults);
+    w.footable.plugins.register(FootableResponsive, defaults);
 
 }(jQuery, window));
