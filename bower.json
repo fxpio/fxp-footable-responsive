@@ -1,0 +1,29 @@
+{
+  "name": "sonatra-footable-responsive",
+  "version": "1.0.0",
+  "authors": [
+    "François Pluchino <francois.pluchino@sonatra.com>"
+  ],
+  "description": "A responsive plugin for Footable",
+  "main": "js/footable-responsive.js",
+  "keywords": [
+    "footable",
+    "responsive",
+    "auto hide",
+    "column"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sonatra/sonatra-footable-responsive",
+  "dependencies": {
+    "footable": "2.0.*",
+    "jquery": ">=1.11.0"
+  },
+  "devDependencies": {
+    "bootstrap": ">=3.0"
+  },
+  "ignore": [
+    "examples",
+    "doc",
+    "README.md"
+  ]
+}
