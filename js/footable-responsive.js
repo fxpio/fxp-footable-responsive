@@ -7,6 +7,7 @@
  * file that was distributed with this source code.
  */
 
+/*global define*/
 /*global jQuery*/
 /*global window*/
 /*global document*/
@@ -21,14 +22,24 @@
 
 /**
  * @param {jQuery} $
- * @param {window} w
  *
+ * @typedef {object}             define.amd
  * @typedef {FootableResponsive} FootableResponsive
  */
-(function ($, w) {
+(function (factory) {
     'use strict';
 
-    if (undefined === w.footable) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery', 'footable'], factory);
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function ($) {
+    'use strict';
+
+    if (undefined === window.footable) {
         throw new Error('Please check and make sure footable.js is included in the page and is loaded prior to this script.');
     }
 
@@ -172,6 +183,6 @@
     // FOOTABLE RESPONSIVE PLUGIN DEFINITION
     // =====================================
 
-    w.footable.plugins.register(FootableResponsive, defaults);
+    window.footable.plugins.register(FootableResponsive, defaults);
 
-}(jQuery, window));
+}));
