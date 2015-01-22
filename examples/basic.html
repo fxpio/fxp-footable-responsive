@@ -58,11 +58,19 @@
         </tbody>
     </table>
 </div>
-<script src="../bower_components/jquery/dist/jquery.js"></script>
-<script src="../bower_components/footable/js/footable.js"></script>
-<script src="../js/footable-responsive.js"></script>
 <script>
-    $( '#table-id' ).footable({responsive: {enabled: true}});
+    var require = {
+        paths: {
+            'jquery': '../bower_components/jquery/dist/jquery',
+            'footable': '../bower_components/footable/js/footable',
+            'sonatra-footable-responsive': '../js/footable-responsive'
+        },
+        deps: ['sonatra-footable-responsive'],
+        callback: function () {
+            $( '#table-id' ).footable({responsive: {enabled: true}});
+        }
+    };
 </script>
+<script src="../bower_components/requirejs/require.js" async="async"></script>
 </body>
 </html>
