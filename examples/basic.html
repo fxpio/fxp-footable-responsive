@@ -65,6 +65,9 @@
             'footable': '../bower_components/footable/js/footable',
             'sonatra-footable-responsive': '../js/footable-responsive'
         },
+        shim: {
+            'footable': ['jquery']
+        },
         deps: ['sonatra-footable-responsive'],
         callback: function () {
             $( '#table-id' ).footable({responsive: {enabled: true}});
