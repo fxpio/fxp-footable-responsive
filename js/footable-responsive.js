@@ -121,7 +121,7 @@
             if ($column.is(":visible")) {
                 contentWidth += $column.outerWidth();
 
-                if (contentWidth >= tableWidth) {
+                if (contentWidth > tableWidth) {
                     data = ft.getColumnData($column.get(0));
                     data.hide[breakpointName] = true;
                     data.hasBreakpoint = true;
