@@ -58,13 +58,13 @@
     var require = {
         paths: {
             'jquery': '../bower_components/jquery/dist/jquery',
-            'footable': '../bower_components/footable/js/footable',
-            'sonatra-footable-responsive': '../js/footable-responsive'
+            'footable': '../bower_components/footable',
+            'sonatra-footable-responsive': '..'
         },
         shim: {
-            'footable': ['jquery']
+            'footable/js/footable': ['jquery']
         },
-        deps: ['sonatra-footable-responsive'],
+        deps: ['sonatra-footable-responsive/js/footable-responsive'],
         callback: function () {
             $( '#table-id' ).footable({responsive: {enabled: true}});
         }
