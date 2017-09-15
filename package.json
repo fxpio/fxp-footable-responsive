@@ -17,7 +17,7 @@
     "url": "https://github.com/sonatra/sonatra-footable-responsive.git"
   },
   "bugs": {
-    "url" : "https://github.com/sonatra/sonatra-footable-responsive/issues"
+    "url": "https://github.com/sonatra/sonatra-footable-responsive/issues"
   },
   "engines": {},
   "main": "js/footable-responsive.js",
