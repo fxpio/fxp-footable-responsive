@@ -61,7 +61,7 @@
             $table = $(event.target);
             $columns = $table.find(ft.options.columnDataSelector);
 
-            for (i = 0; i < $columns.size(); i += 1) {
+            for (i = 0; i < $columns.length; i += 1) {
                 data = ft.getColumnData($columns.get(i));
                 data.hasBreakpoint = true;
 
@@ -86,7 +86,7 @@
             data,
             i;
 
-        for (i = 0; i < $columns.size(); i += 1) {
+        for (i = 0; i < $columns.length; i += 1) {
             data = ft.getColumnData($columns.get(i));
             ft.columns[data.index] = data;
         }
@@ -115,7 +115,7 @@
 
         $table.addClass('breakpoint');
 
-        for (i = 0; i < $columns.size(); i += 1) {
+        for (i = 0; i < $columns.length; i += 1) {
             $column = $columns.eq(i);
 
             if ($column.is(":visible")) {
@@ -171,7 +171,7 @@
             var $table = $(ft.table),
                 $responsive = $table.parent('.table-responsive');
 
-            if (1 === $responsive.size()) {
+            if (1 === $responsive.length) {
                 $table.on('footable_initialized.responsive', onInitializedTable);
                 $table.on('footable_resizing.responsive', onResizingTable);
                 $table.on('footable_resized.responsive', onResizedTable);
