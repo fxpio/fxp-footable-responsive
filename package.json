@@ -22,8 +22,8 @@
   "engines": {},
   "main": "js/footable-responsive.js",
   "dependencies": {
-    "jquery": "^2.1.0",
-    "footable": "git://github.com/fooplugins/FooTable.git#2.0.3"
+    "footable": "git://github.com/fooplugins/FooTable.git#2.0.3",
+    "jquery": "^2.2.0||^3.2.0"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
