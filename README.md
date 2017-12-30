@@ -1,7 +1,7 @@
-Sonatra Footable Responsive
-===========================
+Fxp Footable Responsive
+=======================
 
-Sonatra Footable Responsive is a Footable plugin that offers a auto hide of the last
+Fxp Footable Responsive is a Footable plugin that offers a auto hide of the last
 columns depending on the available width.
 
 Documentation
@@ -27,10 +27,10 @@ This javascript component is under the MIT license. See the complete license:
 About
 -----
 
-Sonatra Footable Responsive is a [sonatra](https://github.com/sonatra) initiative.
-See also the list of [contributors](https://github.com/sonatra/sonatra-footable-responsive/graphs/contributors).
+Fxp Footable Responsive is a [François Pluchino](https://github.com/francoispluchino) initiative.
+See also the list of [contributors](https://github.com/fxpio/fxp-footable-responsive/graphs/contributors).
 
 Reporting an issue or a feature request
 ---------------------------------------
 
-Issues and feature requests are tracked in the [Github issue tracker](https://github.com/sonatra/sonatra-footable-responsive/issues).
+Issues and feature requests are tracked in the [Github issue tracker](https://github.com/fxpio/fxp-footable-responsive/issues).

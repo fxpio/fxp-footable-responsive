@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <title>Basic example - Sonatra Footable Responsive</title>
+    <title>Basic example - Fxp Footable Responsive</title>
     <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="../node_modules/footable/css/footable.core.css" rel="stylesheet">
     <style>
@@ -59,12 +59,12 @@
         paths: {
             'jquery': '../node_modules/jquery/dist/jquery',
             'footable': '../node_modules/footable',
-            'sonatra-footable-responsive': '..'
+            'fxp-footable-responsive': '..'
         },
         shim: {
             'footable/js/footable': ['jquery']
         },
-        deps: ['sonatra-footable-responsive/js/footable-responsive'],
+        deps: ['fxp-footable-responsive/js/footable-responsive'],
         callback: function () {
             $( '#table-id' ).footable({responsive: {enabled: true}});
         }

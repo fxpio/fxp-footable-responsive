@@ -13,7 +13,7 @@ Installation
 ------------
 
 ```
-npm install @sonatra/footable-responsive --save
+npm install @fxp/footable-responsive --save
 ```
 
 Dev installation

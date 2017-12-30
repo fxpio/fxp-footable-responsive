@@ -1,8 +1,8 @@
 {
-  "name": "@sonatra/footable-responsive",
+  "name": "@fxp/footable-responsive",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "François Pluchino <francois.pluchino@sonatra.com>",
+  "author": "François Pluchino <francois.pluchino@gmail.com>",
   "contributors": [],
   "description": "A responsive plugin for Footable",
   "keywords": [
@@ -11,13 +11,13 @@
     "auto hide",
     "column"
   ],
-  "homepage": "https://github.com/sonatra/sonatra-footable-responsive",
+  "homepage": "https://github.com/fxpio/fxp-footable-responsive",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sonatra/sonatra-footable-responsive.git"
+    "url": "https://github.com/fxpio/fxp-footable-responsive.git"
   },
   "bugs": {
-    "url": "https://github.com/sonatra/sonatra-footable-responsive/issues"
+    "url": "https://github.com/fxpio/fxp-footable-responsive/issues"
   },
   "engines": {},
   "main": "js/footable-responsive.js",
