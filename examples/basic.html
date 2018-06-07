@@ -4,8 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>Basic example - Fxp Footable Responsive</title>
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../node_modules/footable/css/footable.core.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <style>
         body {
             padding: 20px;
@@ -54,22 +53,6 @@
         </tbody>
     </table>
 </div>
-<script>
-    var require = {
-        paths: {
-            'jquery': '../node_modules/jquery/dist/jquery',
-            'footable': '../node_modules/footable',
-            'fxp-footable-responsive': '..'
-        },
-        shim: {
-            'footable/js/footable': ['jquery']
-        },
-        deps: ['fxp-footable-responsive/js/footable-responsive'],
-        callback: function () {
-            $( '#table-id' ).footable({responsive: {enabled: true}});
-        }
-    };
-</script>
-<script src="../node_modules/requirejs/require.js" async="async"></script>
+<script src="main.js" async="async"></script>
 </body>
 </html>
